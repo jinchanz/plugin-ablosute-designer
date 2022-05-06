@@ -1,0 +1,42 @@
+{
+  "name": "lowcode-plugin-absolute-designer",
+  "version": "0.1.0",
+  "description": "alibaba lowcode editor designer plugin",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "stylePath": "style.js",
+  "scripts": {
+    "build": "build-scripts build --skip-demo",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lowcode",
+    "editor"
+  ],
+  "author": "xiayang.xy",
+  "dependencies": {
+    "@alilc/lowcode-designer": "1.0.6",
+    "@alilc/lowcode-editor-core": "1.0.6",
+    "@alilc/lowcode-utils": "1.0.6",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@alib/build-scripts": "^0.1.3",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "build-plugin-component": "^0.2.7"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/mark-ck/plugin-ablosute-designer"
+  }
+}
