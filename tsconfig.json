@@ -1,6 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "react",
     "outDir": "lib"
   },
   "include": [
