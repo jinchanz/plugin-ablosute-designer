@@ -10,10 +10,13 @@
     "@alilc/lowcode-designer": "var window.AliLowCodeEngine.common.designerCabin",
     "@alilc/lowcode-engine-ext": "var window.AliLowCodeEngineExt",
     "@ali/lowcode-engine": "var window.AliLowCodeEngine",
+    "@alilc/lowcode-react-renderer": "var window.AliLowCodeReactRenderer",
+    "@alifd/lowcode-preset-plugin": "var window.PluginLowcodeEditor",
     "moment": "var window.moment",
     "lodash": "var window._"
   },
   "plugins": [
-    "build-plugin-component"
+    "build-plugin-component",
+    "./plugins/engine.js"
   ]
 }
