@@ -85,8 +85,8 @@ export default class DesignerPlugin extends PureComponent<PluginProps> {
           }
           node.setPropValue('style', {
             position: 'fixed',
-            left,
-            top: loc?.event.canvasY - deltaY,
+            left:left||domNode.style.left,
+            top: (loc?.event.canvasY - deltaY)||domNode.style.top,
           });
 
 
